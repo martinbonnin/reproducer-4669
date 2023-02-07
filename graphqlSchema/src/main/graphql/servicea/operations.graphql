@@ -1,0 +1,22 @@
+query SchemaModuleServiceAQuery {
+    a
+    computers {
+        id
+        ... on Computer {
+            cpu
+            year
+            screen {
+                resolution
+                ... on Screen {
+                    isColor
+                }
+            }
+        }
+
+        ...SchemaModuleServiceAFragment
+    }
+}
+
+fragment SchemaModuleServiceAFragment on Computer {
+    id
+}

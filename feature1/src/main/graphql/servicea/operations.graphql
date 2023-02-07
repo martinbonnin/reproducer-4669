@@ -1,9 +1,10 @@
-query MyQuery {
+query Feature1ServiceAQuery {
     computers {
         id
         ... on Computer {
             cpu
             year
+            releaseDate
             screen {
                 resolution
                 ... on Screen {
@@ -11,5 +12,8 @@ query MyQuery {
                 }
             }
         }
+        ...SchemaModuleServiceAFragment
     }
+
+    a
 }

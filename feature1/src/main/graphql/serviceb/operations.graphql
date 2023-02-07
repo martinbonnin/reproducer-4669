@@ -1,0 +1,12 @@
+query Feature1ServiceBQuery {
+    animals {
+        ... on Animal {
+            id
+            name
+            adoptedDate
+        }
+    }
+
+    a
+
+}
