@@ -6,6 +6,6 @@ import org.junit.Test
 class ExampleUnitTest {
     @Test
     fun test() {
-        MyFragment("").extension()
+        MyFragment("change_me").extension()
     }
 }

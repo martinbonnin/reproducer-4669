@@ -1,7 +1,0 @@
-query MyQuery {
-    ...MyFragment
-}
-
-fragment MyFragment on Query {
-    a
-}
